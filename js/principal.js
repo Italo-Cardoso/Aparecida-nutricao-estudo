@@ -1,15 +1,19 @@
 const titulo = document.querySelector(".titulo");
 titulo.textContent = "Aparecida Nutricionista";
 
-const paciente = document.querySelector("#primeiro-paciente , #segundo-paciente");
+const pacientes = document.querySelectorAll(".paciente");
 
-const tdPeso = paciente.querySelector(".info-peso");
+for(var i = 0; i < 5; i++) {
+    console.log(i)
+}
+
+const tdPeso = pacientes.querySelector(".info-peso");
 const peso = tdPeso.textContent;
 
-const tdAltura = paciente.querySelector (".info-altura");
+const tdAltura = pacientes.querySelector (".info-altura");
 const altura = tdAltura.textContent;
 
-const tdImc = paciente.querySelector(".info-imc")
+const tdImc = pacientes.querySelector(".info-imc")
 
 var pesoValido = true;
 var alturaValida = true;
